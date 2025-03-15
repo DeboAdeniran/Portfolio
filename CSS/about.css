@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* <%--------------   Header(NavBar)   --------------%> */
+ul div {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: #ff5925;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 22px;
+  font-weight: 600;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+  /*background-color: red;*/
+  padding: 36px 100px;
+  margin: 0;
+}
+header ul:nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+.navigation {
+  gap: 50px;
+}
+.navigation li {
+  font-size: 18px;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+.navigation a:hover {
+  color: #111;
+}
+.navigation a:active {
+  color: cornflowerblue;
+}
+.nav_btn {
+  display: none;
+}
+/*---------------- about_tab ---------------------*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 100px 0;
+  width: 100%;
+}
+.block {
+  width: 600px;
+}
+.block h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+.block p {
+  font-size: 26px;
+  line-height: 1.6;
+}
+ol li {
+  list-style: none;
+  line-height: 2;
+  font-size: 26px;
+  font-weight: 400;
+}
+ol li:first-child {
+  font-weight: 600;
+}
+.alone {
+  margin-top: 20px;
+}
+
+/*------------------   FOOTER ----------------*/
+footer {
+  margin: 100px 0 100px 0;
+}
+.socials {
+  margin-left: 125px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.circle {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  background-color: #ff5925;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 8px;
+}
+.worktab_title {
+  font-size: 38px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 0px 20px;
+  }
+  .navBAR {
+    position: relative;
+  }
+  .nav_close_btn {
+    position: absolute;
+    top: 5%;
+    right: 14%;
+    width: 36px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation a {
+    color: #fff;
+  }
+  .nav_btn {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #ff5925;
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 1000000;
+    /* color: #fff; */
+  }
+  .responsive_nav {
+    transform: none;
+  }
+  .block h2 {
+    font-size: 35px;
+  }
+  .block p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .block {
+    width: 445px;
+  }
+  ol li {
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .about {
+    gap: 60px;
+    margin: 45px 0;
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
+  }
+  .worktab_title {
+    font-size: 32px;
+  }
+  .socials {
+    margin-left: 140px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  header li {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  header ul:nth-child(2) {
+    justify-self: center;
+    order: 3;
+    grid-column: 1/-1;
+  }
+  .about {
+    gap: 60px;
+    margin: 45px 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20%;
+  }
+  .block {
+    width: 336px;
+  }
+  .block h2 {
+    font-size: 30px;
+  }
+  .block p {
+    font-size: 16px;
+  }
+  .about_more {
+    display: flex;
+  }
+  .worktab_title {
+    font-size: 29px;
+  }
+  li {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .about_more {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .about_more ol li {
+    font-size: 20px;
+  }
+  .menu {
+    margin-left: auto;
+    cursor: pointer;
+    padding-right: 20%;
+  }
+}

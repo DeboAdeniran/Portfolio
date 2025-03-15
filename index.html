@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Debo Adeniran | Portfolio</title>
+    <link rel="stylesheet" href="CSS/homepage.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <div></div>
+        <li>Debo Adeniran</li>
+      </ul>
+      <ul>
+        <li>FullStack Developer</li>
+      </ul>
+      <nav id="navBAR">
+        <ul class="navigation">
+          <li><a href="index.html" onclick="showNavBar()">Home</a></li>
+          <li><a href="#work" onclick="showNavBar()">Work</a></li>
+          <li><a href="about.html" onclick="showNavBar()">About</a></li>
+        </ul>
+        <img
+          src="images/close.svg"
+          class="nav_btn nav_close_btn"
+          onclick="showNavBar()"
+        />
+      </nav>
+      <img src="images/menu.svg" class="nav_btn menu" onclick="showNavBar()" />
+    </header>
+    <div class="main">
+      <div>
+        <img src="images/logo.svg" alt="Logo" />
+      </div>
+      <div class="description">
+        <h1>Hello!</h1>
+        <h3>
+          I'm Debo, a Full-Stack Developer from Nigeria, specializing in React
+          (frontend) and Java (backend) to build scalable web applications.
+        </h3>
+      </div>
+    </div>
+    <div class="work" id="work">
+      <div class="worktab">
+        <div class="section1">
+          <div class="circle"></div>
+          <div>
+            <h2 class="worktab_title">
+              <a href="https://alpine-ascent.vercel.app/" target="_blank">
+                Alpine Ascent</a
+              >
+            </h2>
+            <p class="worktab_subtitle">MOUNTAINEERING WEBSITE</p>
+          </div>
+        </div>
+        <div>
+          <p class="worktab_description">
+            Mountaineering info is scattered; making planning hard. I built a
+            site with centralized, interactive content and geolocation.
+            <span
+              >SRC CODE:
+              <a
+                href="https://github.com/DeboAdeniran/Alpine-Ascent"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub.DeboAdeniran/AlpineAscent</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="work_image">
+        <a href="https://alpine-ascent.vercel.app/" target="_blank">
+          <img src="images/work1.png" />
+        </a>
+      </div>
+    </div>
+    <div class="work">
+      <div class="worktab">
+        <div class="section1">
+          <div class="circle"></div>
+          <div>
+            <h2 class="worktab_title">
+              <a href="https://glovo-replica.vercel.app/" target="_blank">
+                Glovo
+              </a>
+            </h2>
+            <p class="worktab_subtitle">MARKETING WEBSITE RECREATE</p>
+          </div>
+        </div>
+        <div>
+          <p class="worktab_description">
+            During my leisure time, I recreated Glovo's website with the use of
+            Html, CSS and the infamous JavaScript.
+            <span
+              >SRC CODE:
+              <a
+                href="https://github.com/DeboAdeniran/Glovo_Replica"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub.DeboAdeniran/Glovo_Replica</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="work_image">
+        <a href="https://glovo-replica.vercel.app/" target="_blank">
+          <img src="images/work3.png" />
+        </a>
+      </div>
+    </div>
+    <div class="work">
+      <div class="worktab">
+        <div class="section1">
+          <div class="circle"></div>
+          <div>
+            <h2 class="worktab_title">D&C Career Connect</h2>
+            <p class="worktab_subtitle">Job-Listing Web App</p>
+          </div>
+        </div>
+        <div>
+          <p class="worktab_description">
+            During my leisure time, I created a Job-Listing website with the use
+            of React.
+          </p>
+        </div>
+      </div>
+      <div class="work_image">
+        <img src="images/work2.1.png" />
+      </div>
+    </div>
+    <div class="work" id="work GUI">
+      <div class="worktab">
+        <div class="section1">
+          <div class="circle"></div>
+          <div>
+            <h2 class="worktab_title" onclick="installPythonGui()">
+              Weather App
+            </h2>
+            <p class="worktab_subtitle">JPython Weather App API GUI</p>
+          </div>
+        </div>
+        <div>
+          <p class="worktab_description">
+            I created a Weather App GUI using Python and the OpenWeatherMap API.
+            <span
+              >SRC CODE:
+              <a
+                href="https://github.com/DeboAdeniran/WeatherAPI.py"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub.DeboAdeniran/WeatherAPI.py</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="work_image gui_image" onclick="installPythonGui()">
+        <img src="images/work4.png" />
+      </div>
+    </div>
+    <div class="work">
+      <div class="worktab">
+        <div class="section1">
+          <div class="circle"></div>
+          <div>
+            <h2 class="worktab_title">Rock, Paper, Scissors Game</h2>
+            <p class="worktab_subtitle">React rock, paper, scissors game</p>
+          </div>
+        </div>
+        <div>
+          <p class="worktab_description">
+            A created a rock paper scissors game using ReactJS
+            <span
+              >SRC CODE:
+              <a
+                href="https://github.com/DeboAdeniran/Rock-Paper-Scissors"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub.DeboAdeniran/Rock-Paper-Scissors</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="work_image">
+        <a
+          href="https://rock-paper-scissors-five-dun.vercel.app/"
+          target="_blank"
+        >
+          <img src="images/work5.png" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="section1">
+        <div class="circle"></div>
+        <h2 class="worktab_title">CONTACT</h2>
+      </div>
+      <ul class="socials">
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+        <li>Email</li>
+        <li>Resume</li>
+      </ul>
+    </footer>
+    <script src="JAVASCRIPT/index.js"></script>
+  </body>
+</html>
